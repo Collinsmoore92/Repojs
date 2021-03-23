@@ -1,10 +1,10 @@
-const Player = function(name, number, team, height) {
+const Player = function (name, number, team, height) {
     this.name = name;
     this.number = number;
     this.team = team;
     this.height = height;
 };
- 
+
 Player.prototype.speak = function (statement) {
     console.log(`${this.name} says: '${statement}'`);
 };
@@ -18,7 +18,8 @@ var gk = {
     team: "Man City",
     height: "5.9",
     speak: function (statement) {
-        console.log(`${this.name} says: '${statement}'`);
+        console.log(`${this.name} says: '${statement}'`)
+    }
 }
 
 var st = {
@@ -28,6 +29,7 @@ var st = {
     height: "5",
     speak: function (statement) {
         console.log(`${this.name} says: '${statement}'`);
+    }
 }
 
 var md = {
@@ -44,12 +46,12 @@ var md = {
 //ANOTHER WAY class constructor
 class Player {
     constructor(name, number, team, height) {
-    this.name = name;
-    this.number = number;
-    this.team = team;
-    this.height = height;
+        this.name = name;
+        this.number = number;
+        this.team = team;
+        this.height = height;
     }
     speak(statement) {
         console.log(`${this.name} says: '${statement}'`);
-    }      
+    }
 }
